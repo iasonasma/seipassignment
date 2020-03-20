@@ -1,7 +1,7 @@
 # seipassignment
 The second assignment of SEIP
 
-#Installation
+#Installation#
 
 1. Open up git bash
 2. Clone this project to your computer with `git clone https://github.com/iasonasma/seipassignment`
