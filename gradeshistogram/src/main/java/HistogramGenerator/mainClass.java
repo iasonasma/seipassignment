@@ -34,10 +34,10 @@ public class Mainclass {
 		boolean urls = false; 
 
 
-		JFreeChart chart = ChartFactory.createXYLineChart("Chart title", "x_axis title", "y_axis_title", dataset,
+		JFreeChart chart = ChartFactory.createXYLineChart("Histogram Generator", "Grades", "Epanaemfanish", dataset,
 				PlotOrientation.VERTICAL, legend, tooltips, urls);
 
-		ChartFrame frame = new ChartFrame("First", chart);
+		ChartFrame frame = new ChartFrame("HistogramGenerator", chart);
 		frame.pack();
 
 		frame.setVisible(true);
