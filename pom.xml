@@ -4,6 +4,8 @@
   <artifactId>seip2020_practical_assignments</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <name> Second Seip Assignment - Parent</name>
+  <description>Second seip assignment working on maven tools</description>
   <modules>
   	<module>gradeshistogram</module>
   </modules>
