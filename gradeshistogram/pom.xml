@@ -8,7 +8,6 @@
     <groupId>gr.aueb.dmst.iasonasma</groupId>
     <artifactId>seip2020_practical_assignments</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
   </parent>
   
 
@@ -19,7 +18,7 @@
 			<configuration>
 				<archive>
 					<manifest>
-						<mainClass>HistogramGenerator.mainClass</mainClass>
+						<mainClass>histogramgenerator.Mainclass</mainClass>
 					</manifest>
 				</archive>
 				<descriptorRefs>

@@ -1,4 +1,4 @@
-package HistogramGenerator;
+package histogramgenerator;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
@@ -11,7 +11,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 
-public class mainClass {
+public class Mainclass {
 
 
 
@@ -51,7 +51,7 @@ public class mainClass {
 		while (input.hasNext()) {
 			list[input.nextInt()] += 1;
 		}
-		mainClass demo = new mainClass();
+		Mainclass demo = new Mainclass();
 		demo.generateChart(list);
 
 	}
