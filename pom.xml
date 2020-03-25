@@ -4,8 +4,8 @@
   <artifactId>seip2020_practical_assignments</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name> Second Seip Assignment - Histogram Generating using a text file - Parent</name>
-  <description>This is the parent module for this project.The child includes a child , gradeshistogram,which includes the main function of this project.</description>
+  <name> Second Seip Assignment - Histogram Generating using a text file </name>
+  <description>This is the parent module for this project.This pom package includes a child , gradeshistogram,which includes the main function of this project.</description>
   <modules>
   	<module>gradeshistogram</module>
   </modules>
