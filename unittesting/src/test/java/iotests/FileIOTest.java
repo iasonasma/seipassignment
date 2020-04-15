@@ -1,13 +1,15 @@
 package iotests;
 
 
+import static org.junit.Assert.assertThat;
+
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-
+import static org.hamcrest.CoreMatchers.*;
 import io.FileIO;
-
+import java.util.stream.IntStream; 
 public class FileIOTest{
 	
 	@Rule
@@ -20,12 +22,6 @@ public class FileIOTest{
 	public void TestFileIO_validation() {
 		String path = "src/test/resources/fileiotest.txt";
 		Assert.assertArrayEquals(testarray, files.readFile(path));
-	}
-	
-	@Test
-	public void TestFileIO_input() {
-		String path ="src/test/resources/fileiotestwithstring.txt";
-		files.readFile(path);
 	}
 	
 	@Test
@@ -47,6 +43,13 @@ public class FileIOTest{
 		
 	}
 	
+	@Test 
+	public void testReadFileContainsInvalidEntries() {
+		String path = "src/test/resources/fileioinvalidentries.txt";
+		for (int i : files.readFile(path)) {
+			assertThat(i,isA(int.class));
+		}
+	}
 	
 	
 }
