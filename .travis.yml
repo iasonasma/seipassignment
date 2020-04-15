@@ -1,0 +1,11 @@
+dist: trusty
+language: java # Define the language
+jdk: # Define the execution environments
+- openjdk8
+- oraclejdk8
+
+script: # Build the project
+- mvn clean package
+
+after_success: # Notify users about the result
+- echo “Process terminated successfully”
