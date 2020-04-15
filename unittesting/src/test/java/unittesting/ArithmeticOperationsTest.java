@@ -30,13 +30,17 @@ public class ArithmeticOperationsTest {
 	 * correct exception will be thrown if
 	 * we give a negative number
 	 */
-	@Test (expected = IllegalArgumentException.class)
+	@Test 
 	public void getNegativeNumberX() {
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("x & y should be >= 0");
 		oper.multiply(-5, 3);
 	}
 	
-	@Test (expected = IllegalArgumentException.class)
+	@Test 
 	public void getNegativeNumberY() {
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("x & y should be >= 0");
 		oper.multiply(5, -3);
 	}
 	
@@ -58,8 +62,10 @@ public class ArithmeticOperationsTest {
 		Assert.assertEquals(9, oper.divide(18,2),0);
 	}
 	 
-	@Test (expected = IllegalArgumentException.class)
+	@Test
 	public void test_MaxInteger() {
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("The product does not fit in an Integer variable");
 		oper.multiply(Integer.MAX_VALUE,Integer.MAX_VALUE);
 		
 	}

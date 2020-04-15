@@ -1,5 +1,6 @@
 package math;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,15 +20,16 @@ public class ArrayOperations {
 	}
 	
 	public  int[] findPrimesInFile(FileIO fileIo, String filepath, MyMath myMath) {
-		List<Integer> numbersList = new ArrayList<>();
+		List<Integer> primelist = new ArrayList<>();
+	
 		for(int i : fileIo.readFile(filepath)) {
-			System.out.println(i);
-			if(myMath.isPrime(i) == true)
+			if(myMath.isPrime(i) )
 			{
-				numbersList.add(i);
+				primelist.add(i);
 			}
 		}
-		 return numbersList.stream().mapToInt(i -> i).toArray();
+		
+		 return primelist.stream().mapToInt(i -> i).toArray();
 		
 	}
 

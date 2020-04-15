@@ -25,11 +25,11 @@ public class MyMathTest {
 	 * if we give a number bigger than 12
 	 */
 	@Test(expected = IllegalArgumentException.class )
-	public void test_BiggerNumFactorial() {
-		math.factorial(13);
+	public void test_BiggerNumFactorial() { 
+		math.factorial(13); 
 	} 
 	
-	@Test (expected = IllegalArgumentException.class)
+	@Test  (expected = IllegalArgumentException.class)
 	public void TestisPrime() {
 		math.isPrime(1);
 	}

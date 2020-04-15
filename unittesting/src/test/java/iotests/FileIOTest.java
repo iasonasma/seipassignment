@@ -9,7 +9,6 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import static org.hamcrest.CoreMatchers.*;
 import io.FileIO;
-import math.ArrayOperations;
 import math.MyMath;
 
 
@@ -38,15 +37,19 @@ public class FileIOTest{
 		files.readFile(path);
 	}
 	
-	@Test (expected = IllegalArgumentException.class)
+	@Test 
 	public void TestFileIO_not_exist() {
 		String path = "src/test/resources/whatever";
-		files.readFile(path);
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("Input file does not exist");
+		files.readFile(path); 
 	}
 	
-	@Test (expected = IllegalArgumentException.class)
+	@Test 
 	public void TestFileIO_is_empty() {
 		String path = "src/test/resources/fileioisempty.txt";
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("Given file is empty");
 		files.readFile(path);
 		
 	}
