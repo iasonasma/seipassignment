@@ -39,7 +39,6 @@ public class MyMathFactorialTest {
 	 */
 	@Test 
 	public void getfactorialOfNeg() {
-		System.out.println("The factorial for : " + number + " is " + expected);
 		Assert.assertEquals(expected, math.factorial(number));
 		
 	}
