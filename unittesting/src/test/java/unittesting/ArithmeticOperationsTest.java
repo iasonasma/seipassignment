@@ -31,8 +31,13 @@ public class ArithmeticOperationsTest {
 	 * we give a negative number
 	 */
 	@Test (expected = IllegalArgumentException.class)
-	public void getNegativeNumber() {
+	public void getNegativeNumberX() {
 		oper.multiply(-5, 3);
+	}
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void getNegativeNumberY() {
+		oper.multiply(5, -3);
 	}
 	
 	/* Test case will check if multiply method
