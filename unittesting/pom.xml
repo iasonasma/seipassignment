@@ -9,14 +9,35 @@
 	<name>Unit Testing practice project</name>
 	<description>A project for practicing Unit Testing</description>
 
+	<parent>
+		<groupId>gr.aueb.dmst.iasonasma</groupId>
+		<artifactId>seip2020_practical_assignments</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 
-    <parent>
-    <groupId>gr.aueb.dmst.iasonasma</groupId>
-    <artifactId>seip2020_practical_assignments</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  
-  
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.3</version>
+				<configuration>
+					<destFile>${basedir}/target/site/jacoco/jacoco-unit.exec</destFile>
+					<dataFile>${basedir}/target/site/jacoco/jacoco-unit.exec</dataFile>
+				</configuration>
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -25,6 +46,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-  
+
 
 </project>
