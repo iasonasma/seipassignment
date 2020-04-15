@@ -26,5 +26,18 @@ public class MyMath {
         }
           
         return n*factorial(n-1); 
-    } 
+    }  
+    
+    
+    public boolean isPrime(int n) {
+    	
+    	if(n<2) {
+    		throw new IllegalArgumentException("Integer must be greater than2");
+    	}
+        for(int i=2;2*i<n;i++) {
+            if(n%i==0)
+                return false;
+        }
+        return true;
+    }
 }

@@ -25,5 +25,5 @@ public class MyMathTest {
 	@Test(expected = IllegalArgumentException.class )
 	public void test_BiggerNumFactorial() {
 		math.factorial(13);
-	}
+	} 
 }

@@ -57,7 +57,7 @@ public class ArithmeticOperationsTest {
 	public void test_divide() {
 		Assert.assertEquals(9, oper.divide(18,2),0);
 	}
-	
+	 
 	@Test (expected = IllegalArgumentException.class)
 	public void test_MaxInteger() {
 		oper.multiply(Integer.MAX_VALUE,Integer.MAX_VALUE);

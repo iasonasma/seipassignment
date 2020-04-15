@@ -9,12 +9,15 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import static org.hamcrest.CoreMatchers.*;
 import io.FileIO;
+import math.MyMath;
+
 import java.util.stream.IntStream; 
 public class FileIOTest{
 	
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 	
+	MyMath maths = new MyMath();
 	FileIO files = new FileIO();
 	int testarray[] = {5,7,7,3,2,9,4};
 
@@ -51,5 +54,30 @@ public class FileIOTest{
 		}
 	}
 	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void TestisPrime() {
+		maths.isPrime(1);
+	}
+	
+	@Test (expected = AssertionError.class)
+	public void TestisPrime_returns_opposite_true() {
+		Assert.assertEquals(true, maths.isPrime(9));
+	}
+	
+	@Test (expected = AssertionError.class)
+	public void TestisPrime_returns_opposite_false() {
+		Assert.assertEquals(false,maths.isPrime(5));
+	}
+	
+	@Test
+	public void TestisPrime_returns_true() {
+		Assert.assertEquals(true,maths.isPrime(13));
+	}
+	
+	@Test
+	public void TestisPrime_returns_false() {
+		Assert.assertEquals(false,maths.isPrime(9));
+	}
 	
 }
