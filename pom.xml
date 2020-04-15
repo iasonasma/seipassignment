@@ -8,7 +8,10 @@
   <description>This is the parent module for this project.This pom package includes a child , gradeshistogram,which includes the main function of this project.</description>
   <modules>
   	<module>gradeshistogram</module>
+  	<module>unittesting</module>
   </modules>
+ 
+  
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
