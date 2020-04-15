@@ -44,7 +44,6 @@ public class FileIO {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}catch(NumberFormatException e) {
-			
 		}
 		
 		if (numbersList.size() == 0) 

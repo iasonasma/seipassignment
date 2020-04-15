@@ -25,7 +25,7 @@ public class ArithmeticOperationsTest {
 		oper.divide(3,0);
 	}
 	
-	
+	 
 	/* This test case will check if the
 	 * correct exception will be thrown if
 	 * we give a negative number

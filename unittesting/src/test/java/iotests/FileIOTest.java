@@ -9,9 +9,10 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import static org.hamcrest.CoreMatchers.*;
 import io.FileIO;
+import math.ArrayOperations;
 import math.MyMath;
 
-import java.util.stream.IntStream; 
+
 public class FileIOTest{
 	
 	@Rule
@@ -19,7 +20,11 @@ public class FileIOTest{
 	
 	MyMath maths = new MyMath();
 	FileIO files = new FileIO();
+
+	
+
 	int testarray[] = {5,7,7,3,2,9,4};
+	
 
 	@Test
 	public void TestFileIO_validation() {
@@ -50,34 +55,12 @@ public class FileIOTest{
 	public void testReadFileContainsInvalidEntries() {
 		String path = "src/test/resources/fileioinvalidentries.txt";
 		for (int i : files.readFile(path)) {
-			assertThat(i,isA(int.class));
-		}
-	}
+			assertThat(i,is(int.class));
+	 	}
+	} 
+	 
 	
+
 	
-	@Test (expected = IllegalArgumentException.class)
-	public void TestisPrime() {
-		maths.isPrime(1);
-	}
-	
-	@Test (expected = AssertionError.class)
-	public void TestisPrime_returns_opposite_true() {
-		Assert.assertEquals(true, maths.isPrime(9));
-	}
-	
-	@Test (expected = AssertionError.class)
-	public void TestisPrime_returns_opposite_false() {
-		Assert.assertEquals(false,maths.isPrime(5));
-	}
-	
-	@Test
-	public void TestisPrime_returns_true() {
-		Assert.assertEquals(true,maths.isPrime(13));
-	}
-	
-	@Test
-	public void TestisPrime_returns_false() {
-		Assert.assertEquals(false,maths.isPrime(9));
-	}
 	
 }

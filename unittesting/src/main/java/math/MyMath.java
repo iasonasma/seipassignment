@@ -3,7 +3,7 @@ package math;
 
 /*
  * @author - iasonasma
- * 
+ *  
  */
 public class MyMath {
 
