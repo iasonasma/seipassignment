@@ -15,7 +15,7 @@ public class MyMathTest {
 	 */
 	
 	@Test(expected = IllegalArgumentException.class )
-	public void test_negativeNumberFactorial() {
+	public void test_negativeNumberFactorial() { 
 		math.factorial(-5);
 	}
 	

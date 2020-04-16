@@ -19,11 +19,15 @@ public class ArrayOperations {
 		this.source = source;
 	}
 	
-	public  int[] findPrimesInFile(FileIO fileIo, String filepath, MyMath myMath) {
+	public  int[] findPrimesInFile(FileIO fileIo, String filepath, MyMath maths) {
 		List<Integer> primelist = new ArrayList<>();
-	
-		for(int i : fileIo.readFile(filepath)) {
-			if(myMath.isPrime(i) )
+		int [] listofints = fileIo.readFile(filepath);
+		boolean number;
+
+		
+		for(int i : listofints) {
+			 number = maths.isPrime(i);
+			if(number)
 			{
 				primelist.add(i);
 			}

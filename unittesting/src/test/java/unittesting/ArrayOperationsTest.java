@@ -6,6 +6,7 @@ import math.MyMath;
 
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -21,15 +22,16 @@ public class ArrayOperationsTest {
 	String source = "";
 	ArrayOperations arrayoper = new ArrayOperations(files,source,maths);
 	
-	@Rule
-	public ExpectedException thrown = ExpectedException.none();
 	
-	@Test
+	@Test 
 	public void TestfindPrimesInFile_mocking() {
-		int[] mockingarray = new int[] {5,3,3,4,3};
-		when(files.readFile("list")).thenReturn(mockingarray);
-		arrayoper.findPrimesInFile(files, "list", maths);
+		when(files.readFile("test")).thenReturn(new int[] {7,11,13});
+		when(maths.isPrime(7)).thenReturn(true);
+		when(maths.isPrime(11)).thenReturn(true);
+		when(maths.isPrime(13)).thenReturn(true);
+		Assert.assertArrayEquals(new int[] {7, 11,13},arrayoper.findPrimesInFile(files, "test",maths));
 	}
+
 	
 
 

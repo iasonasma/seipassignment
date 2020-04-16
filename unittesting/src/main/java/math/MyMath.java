@@ -26,7 +26,7 @@ public class MyMath {
         }
           
         return n*factorial(n-1); 
-    }  
+    }   
     
     
     public boolean isPrime(int n) {
