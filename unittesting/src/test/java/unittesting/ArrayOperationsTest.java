@@ -36,19 +36,6 @@ public class ArrayOperationsTest {
 	}
 
 	
-	/* Test case for findPrimeInFile, using mocking
-	 * to check if it will return IllegalArgumentException when having
-	 * number less than 2
-	 */
-	@Test  (expected = IllegalArgumentException.class)
-	public void TestfindPrimeInFile_mocking_negative() {
-		when(files.readFile("test")).thenReturn(new int[] {1,0,3});
-		when(maths.isPrime(1)).thenThrow(new IllegalArgumentException());
-		when(maths.isPrime(0)).thenThrow(new IllegalArgumentException());
-		when(maths.isPrime(3)).thenReturn(true);
-		arrayoper.findPrimesInFile(files, "test",maths);
-	}
-	
 
 
 }

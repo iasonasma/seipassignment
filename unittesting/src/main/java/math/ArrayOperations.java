@@ -13,9 +13,9 @@ public class ArrayOperations {
 	private String source;
 
 	
-	public ArrayOperations(FileIO fileIo, String source , MyMath maths) {
+	public ArrayOperations(FileIO fileIo, String source , MyMath mathe) {
 		this.fileIo = fileIo;
-		this.maths = maths;
+		this.maths = mathe;
 		this.source = source;
 	}
 	
@@ -33,8 +33,6 @@ public class ArrayOperations {
 		List<Integer> primelist = new ArrayList<>();
 		int [] listofints = fileIo.readFile(filepath);
 		boolean number;
-
-		 
 		for(int i : listofints) {
 			 number = maths.isPrime(i);
 			if(number)
