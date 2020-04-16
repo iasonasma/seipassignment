@@ -5,7 +5,8 @@ jdk: # Define the execution environments
 - oraclejdk8
 
 script: # Build the project
-- mvn clean package jacoco:report cobertura:cobertura
+- mvn clean package jacoco:report 
 
 after_success: # Notify users about the result
-- bash <(curl -s https://codecov.io/bash) -t ea78d9c3-2d0a-4ae4-b311-5996940c9614
+- export CODECOV_TOKEN="ea78d9c3-2d0a-4ae4-b311-5996940c9614"
+- bash <(curl -s https://codecov.io/bash)

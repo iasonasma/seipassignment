@@ -34,7 +34,7 @@ public class ArrayOperations {
 		int [] listofints = fileIo.readFile(filepath);
 		boolean number;
 
-		
+		 
 		for(int i : listofints) {
 			 number = maths.isPrime(i);
 			if(number)
