@@ -28,6 +28,10 @@ public class MyMath {
         return n*factorial(n-1); 
     }   
     
+    /*Finding if a given integer is prime or not.
+     * @param the integer to check if it's prime or not
+     * @exception IllegalArgumentException when the n is less than 2
+     */
     
     public boolean isPrime(int n) {
     	
