@@ -37,6 +37,11 @@ public class ArithmeticOperationsTest {
 		oper.multiply(-5, 3);
 	}
 	
+	/*Test case to check if multiply will return exceptional
+	 * if Y is negative
+	 * 
+	 */
+	
 	@Test 
 	public void getNegativeNumberY() {
 		thrown.expect(IllegalArgumentException.class);
@@ -62,6 +67,10 @@ public class ArithmeticOperationsTest {
 		Assert.assertEquals(9, oper.divide(18,2),0);
 	}
 	 
+	/*Test case to check if multiply will throw exception if
+	 * number is too high to fit in a variable
+	 * 
+	 */
 	@Test
 	public void test_MaxInteger() {
 		thrown.expect(IllegalArgumentException.class);

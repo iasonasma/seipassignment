@@ -24,19 +24,28 @@ public class FileIOTest{
 
 	int testarray[] = {5,7,7,3,2,9,4};
 	
-
+	/*Test case to check if FileIO returns correct array
+	 * 
+	 */
 	@Test
 	public void TestFileIO_validation() {
 		String path = "src/test/resources/fileiotest.txt";
 		Assert.assertArrayEquals(testarray, files.readFile(path));
 	}
 	
+	/*Test case to check if FileIO is correctly functional
+	 * 
+	 */
 	@Test
 	public void TestFileIO() {
 		String path = "src/test/resources/fileiotest.txt";
 		files.readFile(path);
 	}
 	
+	/*Test case to check if FileIO will throw
+	 * exception when path is incorrect
+	 * 
+	 */
 	@Test 
 	public void TestFileIO_not_exist() {
 		String path = "src/test/resources/whatever";
@@ -45,6 +54,10 @@ public class FileIOTest{
 		files.readFile(path); 
 	}
 	
+	/*Test case to check if FileIO will throw exception
+	 * when file is empty
+	 * 
+	 */
 	@Test 
 	public void TestFileIO_is_empty() {
 		String path = "src/test/resources/fileioisempty.txt";
@@ -52,8 +65,12 @@ public class FileIOTest{
 		thrown.expectMessage("Given file is empty");
 		files.readFile(path);
 		
+	
 	}
 	
+	/*Test case to check that FileIO will ignore chars and doubles
+	 * 
+	 */
 	@Test 
 	public void testReadFileContainsInvalidEntries() {
 		String path = "src/test/resources/fileioinvalidentries.txt";
