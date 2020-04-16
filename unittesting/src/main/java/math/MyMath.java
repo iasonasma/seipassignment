@@ -35,8 +35,8 @@ public class MyMath {
     
     public boolean isPrime(int n) {
     	
-    	if(n<2) {
-    		throw new IllegalArgumentException("Integer must be greater than2");
+    	if(n<=2) {
+    		throw new IllegalArgumentException("Integer must be greater than or same with 2");
     	}
         for(int i=2;2*i<n;i++) {
             if(n%i==0)
