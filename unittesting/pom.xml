@@ -6,8 +6,10 @@
 	<groupId>gr.aueb.dmst.iasonasma</groupId>
 	<artifactId>unittesting</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Unit Testing practice project</name>
-	<description>A project for practicing Unit Testing</description>
+	<name>SEIP Second Assignment - JUnit testing</name>
+	<description>This is the third assignemtn of SeiP , introduction to JUnit and mocking systems.
+	It incldues some simple mathematical functions to test them
+	</description>
 
 	<parent>
 		<groupId>gr.aueb.dmst.iasonasma</groupId>
