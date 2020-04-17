@@ -69,12 +69,21 @@ public class ArithmeticOperationsTest {
 	
 	
 	/** Test case will check if multiply method
-	 * can multtiply with 0
+	 * can multtiply with 0 with a big integer
 	 * 
 	 */
 	@Test
 	public void Test_multiply_with_zero() {
 		oper.multiply(0, Integer.MAX_VALUE);
+	}
+	
+	
+	/** Test case will check what happens
+	 * if we multiply zero with a simple number
+	 */
+	@Test
+	public void Test_multiply_with_zero_() {
+		oper.multiply(0, 3);
 	}
 	
 	
