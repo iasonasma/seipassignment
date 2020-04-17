@@ -104,7 +104,7 @@ public class ArithmeticOperationsTest {
 	public void Test_MaxInteger() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The product does not fit in an Integer variable");
-		oper.multiply(3,Integer.MAX_VALUE);
+		oper.multiply(Integer.MAX_VALUE,Integer.MAX_VALUE);
 		
 	}
 	
