@@ -27,7 +27,7 @@ public class ArrayOperationsTest {
 	 * 
 	 */
 	@Test 
-	public void TestfindPrimesInFile_mocking_valid() {
+	public void TestfindPrimesInFile_Mocking_Valid() {
 		when(files.readFile("test")).thenReturn(new int[] {7,11,13});
 		when(maths.isPrime(7)).thenReturn(true);
 		when(maths.isPrime(11)).thenReturn(true);
@@ -42,7 +42,7 @@ public class ArrayOperationsTest {
 	 */
 	
 	@Test 
-	public void TestfindPrimesInFile_mocking_invalid() {
+	public void TestfindPrimesInFile_Mocking_Invalid() {
 		when(files.readFile("test")).thenReturn(new int[] {7,6,12,13});
 		when(maths.isPrime(7)).thenReturn(true);
 		when(maths.isPrime(6)).thenReturn(false);

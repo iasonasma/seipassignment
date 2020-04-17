@@ -44,7 +44,7 @@ public class MyMathTest {
 	
 	
 	@Test
-	public void TestisPrime_returns_true() {
+	public void TestisPrime_Returns_True() {
 		Assert.assertEquals(true,math.isPrime(13));
 	}
 	
@@ -52,7 +52,7 @@ public class MyMathTest {
 	 * false to a non prime number
 	 */
 	@Test
-	public void TestisPrime_returns_false() {
+	public void TestisPrime_Returns_False() {
 		Assert.assertEquals(false,math.isPrime(9));
 	}
 	

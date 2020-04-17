@@ -30,7 +30,7 @@ public class ArithmeticOperationsTest {
 	  * a numerator as zero
 	  */
 	@Test
-	public void GetDivide_numerator_zero() {
+	public void GetDivide_Numerator_Nero() {
 		oper.divide(0, 3);
 		
 	}
@@ -63,7 +63,7 @@ public class ArithmeticOperationsTest {
 	 */
 	
 	@Test
-	public void Test_multiply() {
+	public void Test_Multiply() {
 		Assert.assertEquals(4, oper.multiply(2,2));
 	}
 	
@@ -73,7 +73,7 @@ public class ArithmeticOperationsTest {
 	 * 
 	 */
 	@Test
-	public void Test_multiply_with_zero() {
+	public void Test_Multiply_with_zero() {
 		oper.multiply(0, Integer.MAX_VALUE);
 	}
 	
@@ -82,7 +82,7 @@ public class ArithmeticOperationsTest {
 	 * if we multiply zero with a simple number
 	 */
 	@Test
-	public void Test_multiply_with_zero_() {
+	public void Test_Multiply_With_Zero_() {
 		oper.multiply(0, 3);
 	}
 	
@@ -92,7 +92,7 @@ public class ArithmeticOperationsTest {
 	 */
 	
 	@Test
-	public void Test_divide() {
+	public void Test_Divide() {
 		Assert.assertEquals(9, oper.divide(18,2),0);
 	}
 	 
