@@ -15,64 +15,64 @@ public class ArithmeticOperationsTest {
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 	
-	/* Test case for Divide method.
+	/** Test case for Divide method.
 	 * Will check if method divide will
 	 * throw exception if denomitor is 0
 	 */
 	
 	@Test(expected = ArithmeticException.class)
-	public void getZeroOnDevice() {
+	public void GetZeroOnDivide() {
 		oper.divide(3,0);
 	}
 	
 	 
-	/* This test case will check if the
+	/** This test case will check if the
 	 * correct exception will be thrown if
 	 * we give a negative number
 	 */
 	@Test 
-	public void getNegativeNumberX() {
+	public void GetNegativeNumberX() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
 		oper.multiply(-5, 3);
 	}
 	
-	/*Test case to check if multiply will return exceptional
+	/**Test case to check if multiply will return exceptional
 	 * if Y is negative
 	 * 
 	 */
 	
 	@Test 
-	public void getNegativeNumberY() {
+	public void GetNegativeNumberY() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
 		oper.multiply(5, -3);
 	}
 	
-	/* Test case will check if multiply method
+	/** Test case will check if multiply method
 	 * will return the expected number
 	 */
 	
 	@Test
-	public void test_multiply() {
+	public void Test_multiply() {
 		Assert.assertEquals(4, oper.multiply(2,2));
 	}
 	
-	/* Test case will check if divide method
+	/** Test case will check if divide method
 	 * will return the expected number
 	 */
 	
 	@Test
-	public void test_divide() {
+	public void Test_divide() {
 		Assert.assertEquals(9, oper.divide(18,2),0);
 	}
 	 
-	/*Test case to check if multiply will throw exception if
+	/**Test case to check if multiply will throw exception if
 	 * number is too high to fit in a variable
 	 * 
 	 */
 	@Test
-	public void test_MaxInteger() {
+	public void Test_MaxInteger() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The product does not fit in an Integer variable");
 		oper.multiply(Integer.MAX_VALUE,Integer.MAX_VALUE);

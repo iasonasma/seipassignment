@@ -34,11 +34,11 @@ public class MyMathFactorialTest {
 		
 	}
 	
-	/* This test will check for the numbers 0,1,2,12 
+	/** This test will check for the numbers 0,1,2,12 
 	 * to see if we get the expected results
 	 */
 	@Test 
-	public void getfactorialOfNeg() {
+	public void GetFactorial() {
 		Assert.assertEquals(expected, math.factorial(number));
 		
 	}

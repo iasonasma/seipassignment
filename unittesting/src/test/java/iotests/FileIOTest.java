@@ -24,7 +24,7 @@ public class FileIOTest{
 
 	int testarray[] = {5,7,7,3,2,9,4};
 	
-	/*Test case to check if FileIO returns correct array
+	/**Test case to check if FileIO returns correct array
 	 * 
 	 */
 	@Test
@@ -33,7 +33,7 @@ public class FileIOTest{
 		Assert.assertArrayEquals(testarray, files.readFile(path));
 	}
 	
-	/*Test case to check if FileIO is correctly functional
+	/**Test case to check if FileIO is correctly functional
 	 * 
 	 */
 	@Test
@@ -42,7 +42,7 @@ public class FileIOTest{
 		files.readFile(path);
 	}
 	
-	/*Test case to check if FileIO will throw
+	/**Test case to check if FileIO will throw
 	 * exception when path is incorrect
 	 * 
 	 */
@@ -54,7 +54,7 @@ public class FileIOTest{
 		files.readFile(path); 
 	}
 	
-	/*Test case to check if FileIO will throw exception
+	/**Test case to check if FileIO will throw exception
 	 * when file is empty
 	 * 
 	 */
@@ -68,7 +68,7 @@ public class FileIOTest{
 	
 	}
 	
-	/*Test case to check that FileIO will ignore chars and doubles
+	/**Test case to check that FileIO will ignore chars and doubles
 	 * 
 	 */
 	@Test 

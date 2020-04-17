@@ -22,7 +22,7 @@ public class ArrayOperationsTest {
 	String source = "";
 	ArrayOperations arrayoper = new ArrayOperations(files,source,maths);
 	
-	/* Test case for findPrimeInFile, using mocking
+	/** Test case for findPrimeInFile, using mocking
 	 * to check that it will return the valid array list
 	 * 
 	 */
