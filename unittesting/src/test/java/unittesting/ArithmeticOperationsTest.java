@@ -67,6 +67,17 @@ public class ArithmeticOperationsTest {
 		Assert.assertEquals(4, oper.multiply(2,2));
 	}
 	
+	
+	/** Test case will check if multiply method
+	 * can multtiply with 0
+	 * 
+	 */
+	@Test
+	public void Test_multiply_with_zero() {
+		oper.multiply(0, Integer.MAX_VALUE);
+	}
+	
+	
 	/** Test case will check if divide method
 	 * will return the expected number
 	 */
@@ -84,7 +95,7 @@ public class ArithmeticOperationsTest {
 	public void Test_MaxInteger() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The product does not fit in an Integer variable");
-		oper.multiply(Integer.MAX_VALUE,Integer.MAX_VALUE);
+		oper.multiply(3,Integer.MAX_VALUE);
 		
 	}
 	

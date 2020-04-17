@@ -32,11 +32,11 @@ public class ArithmeticOperations {
 	public int multiply(int x, int y) {
 		if (x < 0 || y < 0) {
 			throw new IllegalArgumentException("x & y should be >= 0");
-		} else if (x <= Integer.MAX_VALUE/y) { 
-			return x*y;			
-		} else {
+		} 
+		else if (x > Integer.MAX_VALUE-y || y > Integer.MAX_VALUE -x) {
 			throw new IllegalArgumentException("The product does not fit in an Integer variable");		
 		}
+		return x*y;
 	}
 	
 	
