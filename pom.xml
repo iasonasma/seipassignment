@@ -4,8 +4,11 @@
   <artifactId>seip2020_practical_assignments</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name> Second Seip Assignment - Histogram Generating using a text file </name>
-  <description>This is the parent module for this project.This pom package includes a child , gradeshistogram,which includes the main function of this project.</description>
+  <name>   Assignment - Histogram Generator and JUnit testing </name>
+  <description>This is the parent module of the project.Far now,it incldues 
+  the first  assignment of SEIP project ,which includes a histogram generator 
+  from reading a text file.Secondly,it incldues a new SEIP assignment which has test cases for some simple
+   mathematical functions.For more information read each module's page</description>
   <modules>
   	<module>gradeshistogram</module>
   	<module>unittesting</module>

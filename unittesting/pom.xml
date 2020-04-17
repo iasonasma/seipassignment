@@ -8,7 +8,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SEIP Second Assignment - JUnit testing</name>
 	<description>This is the third assignemtn of SeiP , introduction to JUnit and mocking systems.
-	It incldues some simple mathematical functions to test them
+	This module simple includes some mathematic functions such as multiply,divide,factiorial and finding
+	if a integer is prime or not.It also demostrate the usage of JUnit, on these functions.
 	</description>
 
 	<parent>
