@@ -36,7 +36,7 @@ public class ArrayOperations {
 		for(int i : listofints) {
 			 number = maths.isPrime(i);
 			if(number)
-			{
+			{ 
 				primelist.add(i);
 			}
 		}

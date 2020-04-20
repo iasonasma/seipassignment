@@ -25,15 +25,6 @@ public class ArithmeticOperationsTest {
 		oper.divide(3,0);
 	}
 	
-	 /**Test case for Divide method.
-	  * Will check what happens if we give
-	  * a numerator as zero
-	  */
-	@Test
-	public void GetDivide_Numerator_Nero() {
-		oper.divide(0, 3);
-		
-	}
 	
 	/** This test case will check if the
 	 * correct exception will be thrown if
@@ -78,15 +69,6 @@ public class ArithmeticOperationsTest {
 	}
 	
 	
-	/** Test case will check what happens
-	 * if we multiply zero with a simple number
-	 */
-	@Test
-	public void Test_Multiply_With_Zero_() {
-		oper.multiply(0, 3);
-	}
-	
-	
 	/** Test case will check if divide method
 	 * will return the expected number
 	 */
@@ -104,7 +86,7 @@ public class ArithmeticOperationsTest {
 	public void Test_MaxInteger() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The product does not fit in an Integer variable");
-		oper.multiply(Integer.MAX_VALUE,Integer.MAX_VALUE);
+		oper.multiply(3,Integer.MAX_VALUE);
 		
 	}
 	

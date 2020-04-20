@@ -26,7 +26,7 @@ public class ArrayOperationsTest {
 	 * to check that it will return the valid array list
 	 * 
 	 */
-	@Test 
+	@Test  
 	public void TestfindPrimesInFile_Mocking_Valid() {
 		when(files.readFile("test")).thenReturn(new int[] {7,11,13});
 		when(maths.isPrime(7)).thenReturn(true);

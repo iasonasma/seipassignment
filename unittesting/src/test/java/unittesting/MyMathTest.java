@@ -42,10 +42,10 @@ public class MyMathTest {
 	 * 
 	 */
 	
-	
+	 
 	@Test
 	public void TestisPrime_Returns_True() {
-		Assert.assertEquals(true,math.isPrime(13));
+		Assert.assertTrue(math.isPrime(13));
 	}
 	
 	/**Test case to check if isPrime will return
@@ -53,7 +53,7 @@ public class MyMathTest {
 	 */
 	@Test
 	public void TestisPrime_Returns_False() {
-		Assert.assertEquals(false,math.isPrime(9));
+		Assert.assertFalse(math.isPrime(9));
 	}
 	
 }

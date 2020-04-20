@@ -21,7 +21,7 @@ public class MyMath {
         	throw new IllegalArgumentException("n should be bigger than 0");
         }
         else if ( n > 12)
-        {
+        { 
         	throw new IllegalArgumentException("n should be less than 12");
         }
           
@@ -38,7 +38,7 @@ public class MyMath {
     	if(n<=2) {
     		throw new IllegalArgumentException("Integer must be greater than or same with 2");
     	}
-        for(int i=2;2*i<n;i++) {
+        for(int i=2;2*i<n;i++) { 
             if(n%i==0)
                 return false;
         }
