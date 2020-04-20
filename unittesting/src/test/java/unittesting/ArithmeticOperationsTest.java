@@ -31,7 +31,7 @@ public class ArithmeticOperationsTest {
 	 * we give a negative number
 	 */
 	@Test 
-	public void GetNegativeNumberX() {
+	public void getNegativeNumberX() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
 		oper.multiply(-5, 3);
@@ -43,7 +43,7 @@ public class ArithmeticOperationsTest {
 	 */
 	
 	@Test 
-	public void GetNegativeNumberY() {
+	public void getNegativeNumberY() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
 		oper.multiply(5, -3);
@@ -54,7 +54,7 @@ public class ArithmeticOperationsTest {
 	 */
 	
 	@Test
-	public void Test_Multiply() {
+	public void testMultiply() {
 		Assert.assertEquals(4, oper.multiply(2,2));
 	}
 	
@@ -64,7 +64,7 @@ public class ArithmeticOperationsTest {
 	 * 
 	 */
 	@Test
-	public void Test_Multiply_with_zero() {
+	public void testMultiplyWithZero() {
 		oper.multiply(0, Integer.MAX_VALUE);
 	}
 	
@@ -74,7 +74,7 @@ public class ArithmeticOperationsTest {
 	 */
 	
 	@Test
-	public void Test_Divide() {
+	public void testDivide() {
 		Assert.assertEquals(9, oper.divide(18,2),0);
 	}
 	 
@@ -83,7 +83,7 @@ public class ArithmeticOperationsTest {
 	 * 
 	 */
 	@Test
-	public void Test_MaxInteger() {
+	public void testMaxInteger() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The product does not fit in an Integer variable");
 		oper.multiply(3,Integer.MAX_VALUE);

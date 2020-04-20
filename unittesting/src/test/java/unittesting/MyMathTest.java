@@ -34,7 +34,7 @@ public class MyMathTest {
 	 * from having a number less than 2
 	 */
 	@Test  (expected = IllegalArgumentException.class)
-	public void TestisPrime() {
+	public void testisPrime() {
 		math.isPrime(1);
 	}
 		
@@ -44,7 +44,7 @@ public class MyMathTest {
 	
 	 
 	@Test
-	public void TestisPrime_Returns_True() {
+	public void testisPrimeReturnsTrue() {
 		Assert.assertTrue(math.isPrime(13));
 	}
 	
@@ -52,7 +52,7 @@ public class MyMathTest {
 	 * false to a non prime number
 	 */
 	@Test
-	public void TestisPrime_Returns_False() {
+	public void testisPrimeReturnsFalse() {
 		Assert.assertFalse(math.isPrime(9));
 	}
 	

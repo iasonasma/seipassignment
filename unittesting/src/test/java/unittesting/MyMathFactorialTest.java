@@ -20,7 +20,7 @@ public class MyMathFactorialTest {
 	@Parameter (value = 0)
 	public int number;
 	@Parameter (value = 1)
-	public int expected;
+	public int expected; 
 	
 	
 	MyMath math = new MyMath();
@@ -38,7 +38,7 @@ public class MyMathFactorialTest {
 	 * to see if we get the expected results
 	 */
 	@Test 
-	public void GetFactorial() {
+	public void getFactorial() {
 		Assert.assertEquals(expected, math.factorial(number));
 		
 	}
