@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/iasonasma/seipassignment.svg?token=zKBy4kPTCDsdVk1RAsYy&branch=development)](https://travis-ci.com/iasonasma/seipassignment)
-
 # General
 
 The purpose of this project is to the Second Assignment of SEIP - AUEB!
