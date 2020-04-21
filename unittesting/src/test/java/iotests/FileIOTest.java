@@ -28,7 +28,7 @@ public class FileIOTest{
 	 * 
 	 */
 	@Test
-	public void TestFileIO_Validation() {
+	public void testFileIOValidation() {
 		String path = "src/test/resources/fileiotest.txt";
 		Assert.assertArrayEquals(testarray, files.readFile(path));
 	}
@@ -37,7 +37,7 @@ public class FileIOTest{
 	 * 
 	 */
 	@Test
-	public void TestFileIO() {
+	public void testFileIO() {
 		String path = "src/test/resources/fileiotest.txt";
 		files.readFile(path);
 	}
@@ -47,7 +47,7 @@ public class FileIOTest{
 	 * 
 	 */
 	@Test 
-	public void TestFileIO_Not_Exist() {
+	public void testFileIONotExist() {
 		String path = "src/test/resources/whatever";
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Input file does not exist");
@@ -59,7 +59,7 @@ public class FileIOTest{
 	 * 
 	 */
 	@Test 
-	public void TestFileIO_Is_Empty() {
+	public void testFileIOIsEmpty() {
 		String path = "src/test/resources/fileioisempty.txt";
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Given file is empty");

@@ -46,7 +46,7 @@ public class ArithmeticOperationsTest {
 	public void getNegativeNumberY() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
-		oper.multiply(5, -3);
+		oper.multiply(5, -3); 
 	}
 	
 	/** Test case will check if multiply method
@@ -64,10 +64,18 @@ public class ArithmeticOperationsTest {
 	 * 
 	 */
 	@Test
-	public void testMultiplyWithZero() {
-		oper.multiply(0, Integer.MAX_VALUE);
+	public void testMultiplyWithZeroMaxValue() {
+		Assert.assertEquals(0,oper.multiply(0, Integer.MAX_VALUE));
 	}
 	
+	
+	/** Test case to check if we will get return 0
+	 * if we multiply a number with 0
+	 */
+	@Test
+	public void testMultiplyWithZero() {
+		Assert.assertEquals(0,oper.multiply(4, 0));
+	}
 	
 	/** Test case will check if divide method
 	 * will return the expected number
