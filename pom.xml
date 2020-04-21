@@ -4,16 +4,60 @@
   <artifactId>seip2020_practical_assignments</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name> Second Seip Assignment - Histogram Generating using a text file </name>
-  <description>This is the parent module for this project.This pom package includes a child , gradeshistogram,which includes the main function of this project.</description>
+  <name>   Assignment - Histogram Generator and JUnit testing </name>
+  <description>This is the parent module of the project.Far now,it incldues 
+  the first  assignment of SEIP project ,which includes a histogram generator 
+  from reading a text file.Secondly,it incldues a new SEIP assignment which has test cases for some simple
+   mathematical functions.For more information read each module's page</description>
   <modules>
   	<module>gradeshistogram</module>
+  	<module>unittesting</module>
   </modules>
 
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.3</version>
+				<configuration>
+					<destFile>${basedir}/target/site/jacoco/jacoco-unit.exec</destFile>
+					<dataFile>${basedir}/target/site/jacoco/jacoco-unit.exec</dataFile>
+				</configuration>
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
   
+  
+  
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		
+	 	<dependency>
+	 	<groupId>org.mockito</groupId>
+   		 <artifactId>mockito-core</artifactId>
+   		 <version>2.27.0</version>
+  		  <scope>test</scope>
+   	 </dependency>
+	</dependencies>
 </project>

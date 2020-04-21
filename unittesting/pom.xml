@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- Replace the following values with your own -->
+	<groupId>gr.aueb.dmst.iasonasma</groupId>
+	<artifactId>unittesting</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>SEIP Second Assignment - JUnit testing</name>
+	<description>This is the third assignemtn of SeiP , introduction to JUnit and mocking systems.
+	This module simple includes some mathematic functions such as multiply,divide,factiorial and finding
+	if a integer is prime or not.It also demostrate the usage of JUnit, on these functions.
+	</description>
+
+	<parent>
+		<groupId>gr.aueb.dmst.iasonasma</groupId>
+		<artifactId>seip2020_practical_assignments</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+
+
+
+</project>

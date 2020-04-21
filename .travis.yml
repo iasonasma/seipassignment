@@ -1,0 +1,12 @@
+dist: trusty
+language: java # Define the language
+jdk: # Define the execution environments
+- openjdk8
+- oraclejdk8
+
+script: # Build the project
+- mvn clean package jacoco:report 
+
+after_success: # Notify users about the result
+- export CODECOV_TOKEN="ea78d9c3-2d0a-4ae4-b311-5996940c9614"
+- bash <(curl -s https://codecov.io/bash)

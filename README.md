@@ -1,24 +1,29 @@
-# General
+[![Build Status](https://travis-ci.com/iasonasma/seipassignment.svg?token=zKBy4kPTCDsdVk1RAsYy&branch=development)](https://travis-ci.com/iasonasma/seipassignment)
+[![codecov](https://codecov.io/gh/iasonasma/seipassignment/branch/development/graph/badge.svg?token=NXS4EW6VKJ)](https://codecov.io/gh/iasonasma/seipassignment)
 
-The purpose of this project is to the Second Assignment of SEIP - AUEB!
+## General
 
-It demostrate the usage of Maven tools and the way to create a funtional project through it.
-
-What it does is receiving a text file from a specific path and analyze it.
-In the end a cool graphich chart will be appeared!
+The purpose of this repository is for  all the assignments of the course Software engineering in practice (2020).
+It demostrate the usage of Maven tools and JUnit tools.
 
 
-# Requirements 
+## First Assignment - Grade Histogram
+First assignent is about a introduction to the Maven tool.It's a simple demostration of how you can run a simple statistic graph from reading a simple .txt file. For more information click [here](https://github.com/iasonasma/seipassignment/tree/development/gradeshistogram)
+ 
+## Second Assignment - JUnit testing
+Second assignment is about a introduction to JUnit.It's a simple demostration of how to run tests to simple methods , such dividing and multiply. For more information click .[here](https://github.com/iasonasma/seipassignment/tree/development/unittesting)
 
+## Requirements 
+* Eclipse 2019-12
 * Java 1.8.x
 * Maven 3.6.3
 
-# Building - Running
+## Getting started
 
-* Clone this project with `git clone https://github.com/iasonasma/seipassignment`
-* Browse the folder with `cd seipassignment`
-* Build the project with Maven using ` mvn install`
-* After the maven is done with building the project browse into the target folder of `seipassignment\gradeshistogram\target`
-* Use java-jar to run your file `java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar <your path>` where `<your path>` is the path for the text file
-eg if my text file is on my Downloads folder,my path should be `C:/Users/Username/Downloads/grades.txt`
+* Fork this repository to your account/
+* Clone your forked repository to your machine using `git clone https://github.com/YOURUSERNAME/seipassignment`
+* You can browse the modules and read each instruction of how-to-use it.
+
+## Authors
+* [Iasonas Makrugiannis](https://github.com/iasonasma) - Coding -
 
