@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.com/iasonasma/seipassignment.svg?token=zKBy4kPTCDsdVk1RAsYy&branch=development)](https://travis-ci.com/iasonasma/seipassignment)
-[![codecov](https://codecov.io/gh/iasonasma/seipassignment/branch/development/graph/badge.svg?token=NXS4EW6VKJ)](https://codecov.io/gh/iasonasma/seipassignment)
+[![Build Status](https://travis-ci.com/iasonasma/seipassignment.svg?token=zKBy4kPTCDsdVk1RAsYy&branch=master)](https://travis-ci.com/iasonasma/seipassignment)
+[![codecov](https://codecov.io/gh/iasonasma/seipassignment/branch/master/graph/badge.svg?token=NXS4EW6VKJ)](https://codecov.io/gh/iasonasma/seipassignment)
 
 ## General
 
