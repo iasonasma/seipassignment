@@ -10,3 +10,6 @@ script: # Build the project
 after_success: # Notify users about the result
 - export CODECOV_TOKEN="ea78d9c3-2d0a-4ae4-b311-5996940c9614"
 - bash <(curl -s https://codecov.io/bash)
+- cd analyzermetrics/target
+- java -jar analyzermetrics-0.0.1-SNAPSHOT-jar-with-dependencies.jar   ../src/test/resources/TestClass.java strcomp local ../outputtravis csv
+- diff ../outputtravis.csv ../outputtest.csv
