@@ -17,6 +17,9 @@ public class FileReadLocal implements FileReadIO {
 	public List<String> storeFileList(String pathfile) {
 		List<String> lines = new ArrayList<>();
 		this.file = new File(pathfile);
+		if(file.length() == 0) {
+			throw new IllegalArgumentException("Class must not be empty");
+		} 
 		try {
 			this.reader = new BufferedReader(new FileReader(file));
 			while ((line = reader.readLine()) != null) {
@@ -35,26 +38,6 @@ public class FileReadLocal implements FileReadIO {
 
 	}
 
-	@Override
-	public String storeFileString(String pathfile) {
-		StringBuilder sb = new StringBuilder();
-		this.file = new File(pathfile);
-		try {
-			this.reader = new BufferedReader(new FileReader(file));
-			while ((line = reader.readLine()) != null) {
-				sb.append(line + "\n");
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				reader.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
 
-		return sb.toString();
-	}
 
 }
