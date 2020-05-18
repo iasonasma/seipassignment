@@ -30,7 +30,7 @@ public class FileReadLocal implements FileReadIO {
 		} finally {
 			try {
 				reader.close();
-			} catch (IOException e) {
+			} catch (IOException e) { 
 				e.printStackTrace();
 			}
 		}

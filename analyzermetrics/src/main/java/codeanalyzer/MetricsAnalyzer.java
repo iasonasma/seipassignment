@@ -17,7 +17,7 @@ public class MetricsAnalyzer {
 		FileParser parser = AnalyzeFactory.createParser(typeoutsourcefile);
 		try {
 			codelines = reader.storeFileList(pathfile);
-		}catch(Exception e) {
+		}catch(Exception e) { 
 			e.printStackTrace();
 		}
 		

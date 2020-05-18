@@ -6,7 +6,7 @@ public class AnalyzeString implements SourceCodeAnalyze{
 	int loc = 0;
 	int nom = 0;
 	int noc = 0;
-	
+	 
 	@Override
 	public int countLOC(List<String> codeslines) {
 		int nonCodeLinesCounter = 0;

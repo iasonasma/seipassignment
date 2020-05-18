@@ -22,7 +22,7 @@ public int countLOC(List<String> codeslines) {
 	}
 	loc = codeslines.size() - nonCodeLinesCounter;
        
-	return loc;
+	return loc; 
 }
 
 	@Override
@@ -32,7 +32,7 @@ public int countLOC(List<String> codeslines) {
         Matcher methodSignatures = pattern.matcher(sourceCode);
         while (methodSignatures.find()) {
         	nom++;
-        }
+        } 
 		}
 		return nom;
 		
