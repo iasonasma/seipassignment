@@ -24,14 +24,14 @@ public class MetricsAnalyzer {
 		linesCode = analyzer.countLOC(codelines);
 		classNumber = analyzer.countNOC(codelines);
 		methodsNumber = analyzer.countNOM(codelines);
-		metrics = MetricsAnalyzer.writeToFile(linesCode, classNumber, methodsNumber);	
+		metrics = MetricsAnalyzer.writeToList(linesCode, classNumber, methodsNumber);	
 		
 		parser.writeToFile(metrics, pathfileoutsource);
 		
 	}
 	
 	
-	public static List<String> writeToFile(int linesCode, int classNumber, int methodsNumber) {
+	public static List<String> writeToList(int linesCode, int classNumber, int methodsNumber) {
 		List<String> list = new ArrayList<String>();
 		list.add("loc,noc,nom");
 		list.add(String.valueOf(linesCode) + "," + String.valueOf(classNumber) + "," + String.valueOf(methodsNumber));	

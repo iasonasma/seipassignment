@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 
 import static org.junit.Assert.assertThat;
 
-import java.io.IOException;
 
 import org.junit.Test;
 import codeanalyzer.AnalyzeFactory;
@@ -14,7 +13,7 @@ import codeanalyzer.AnalyzeString;
 import codeanalyzer.CsvParser;
 import codeanalyzer.FileReadLocal;
 import codeanalyzer.FileReadWeb;
-import codeanalyzer.SourceCodeAnalyze;
+
 
 public class AnalyzeFactoryTest {
 	 AnalyzeFactory result = new AnalyzeFactory();

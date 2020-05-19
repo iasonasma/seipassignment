@@ -1,7 +1,7 @@
 package codeanalyzer;
 
 import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class CsvParser implements FileParser {
 				writer.write(line);
 				writer.write(System.lineSeparator());
 			}
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
 			writer.close();
