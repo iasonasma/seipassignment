@@ -22,10 +22,9 @@ dependancy on the FileRead class,since we only use a list instead.
 1. Fork this repository to your account
 2. Clone your forked repository to your machine using `git clone https://github.com/YOURUSERNAME/seipassignment` 
 3. Browse into the repository `cd seipassignment/analyzermetrics`  
-4. Build the executable Java application with: 
-	`mvn package jacoco:report`
-5.When the buildi is done, go to the target folder 
-6.Run the executable by executing:
+4. Build the executable Java application with: `mvn package jacoco:report`
+5. When the build is done, go to the target folder 
+6. Run the executable by executing:
 	 * java –jar “jar-with-dependencies” arg0 arg1 arg2 arg3 arg4
    * were args translate to: 	
 	 *  arg0 = “JavaSourceCodeInputFile” (e.g., src/test/resources/TestClass.java)
@@ -34,7 +33,7 @@ dependancy on the FileRead class,since we only use a list instead.
 	 *  arg3 = “OutputFilePath” (e.g., ../output_metrics_file)
 	 *  arg4 = “OutputFileType” [csv|json]
    *  example: 
-	 *  java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
+	  * java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
   
   ## UML Class Diagram
   ![diagram](classdiagram.png)
