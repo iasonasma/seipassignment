@@ -47,5 +47,6 @@ public class FileReadLocalTest {
 		thrown.expectMessage("Class must not be empty");
 		sfr.storeFileList("src/test/resources/TestEmptyClass.java");
 	} 
+	
 	 
 }

@@ -37,4 +37,4 @@ dependancy on the FileRead class,since we only use a list instead.
 	 *  java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
   
   ## UML Class Diagram
-  ![diagram](Class Diagram.png)
+  ![diagram](classdiagram.png)
