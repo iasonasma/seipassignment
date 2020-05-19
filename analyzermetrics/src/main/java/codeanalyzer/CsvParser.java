@@ -16,11 +16,11 @@ public class CsvParser implements FileParser {
 				writer.write(line);
 				writer.write(System.lineSeparator());
 			}
+			System.out.println("Metrics saved in" + outputsource + ".csv");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
 			writer.close();
-			System.out.println("Metrics saved in" + outputsource + ".csv");
 		}
 	}
 

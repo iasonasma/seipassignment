@@ -9,25 +9,25 @@ import java.util.List;
 
 public class FileReadLocal implements FileReadIO {
 	
-	String line = null; 
-	BufferedReader reader = null;
-	File file = null;
-	
+
 	@Override
 	public List<String> storeFileList(String pathfile) {
+		String line = null; 
+		BufferedReader reader = null;
+		File file = new File(pathfile);
 		List<String> lines = new ArrayList<>();
-		this.file = new File(pathfile);
 		if(file.length() == 0) {
-			throw new IllegalArgumentException("Class must not be empty");
+			throw new IllegalArgumentException("Error! Check if file exists and make sure the file is not empty!");
 		} 
 		try {
-			this.reader = new BufferedReader(new FileReader(file));
+			reader = new BufferedReader(new FileReader(file));
 			while ((line = reader.readLine()) != null) {
 				lines.add(line);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-		} finally {
+		}
+		finally {
 			try {
 				reader.close();
 			} catch (IOException e) { 

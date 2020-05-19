@@ -39,12 +39,11 @@ public class FileReadLocalTest {
 		
 		assertArrayEquals(expecteds, actuals);
 	}
- 
 	
 	@Test
 	public void testReadFileLocalEmpty() {
 		thrown.expect(IllegalArgumentException.class);
-		thrown.expectMessage("Class must not be empty");
+		thrown.expectMessage("Error! Check if file exists and make sure the file is not empty!");
 		sfr.storeFileList("src/test/resources/TestEmptyClass.java");
 	} 
 	
