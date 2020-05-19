@@ -17,21 +17,26 @@ public class AnalyzeRegexTest {
 	static List<String> listofstrings = new ArrayList<String>();
 	private static   String TEST_CLASS_LOCAL = "src/test/resources/TestClass.java";
 	
+	//This script will be running before each test,to ensure the listofstrings has the .java's file code
 	@Before
 	public  void setUp() throws IOException {
 		listofstrings = Files.readAllLines(new File(TEST_CLASS_LOCAL).toPath(), Charset.defaultCharset());
 	}
 	
+	//Test case to check the correct return of Regex LOC
 	@Test
 	public  void testCalculateRegexLOC() throws IOException {
 		assertEquals(21, anregex.countLOC(listofstrings)); 
 	}
 	
+	//Test case to check the correct return of NOM LOC
 	@Test
 	public void testCalculateRegexNOM() throws IOException {
 		assertEquals(3,anregex.countNOM(listofstrings));
 	}
 	
+	
+	//Test case to check the correct return of Regex NOC
 	@Test
 	public void testCalculateRegexNOC() throws IOException{
 		assertEquals(3,anregex.countNOC(listofstrings));
