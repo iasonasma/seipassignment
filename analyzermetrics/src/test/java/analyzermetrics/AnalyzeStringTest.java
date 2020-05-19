@@ -20,7 +20,7 @@ public class AnalyzeStringTest {
 	@Before
 	public  void setUp() throws IOException {
 		listofstrings = Files.readAllLines(new File(TEST_CLASS_LOCAL).toPath(), Charset.defaultCharset());
-	}
+	} 
 	
 	@Test
 	public  void testCalculateRegexLOC() throws IOException {

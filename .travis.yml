@@ -14,4 +14,4 @@ after_success: # Notify users about the result
 - java -jar analyzermetrics-0.0.1-SNAPSHOT-jar-with-dependencies.jar   ../src/test/resources/TestClass.java strcomp local ../outputtravis csv
 - java -jar analyzermetrics-0.0.1-SNAPSHOT-jar-with-dependencies.jar   ../src/test/resources/TestClass.java strcomp local ../outputtraviscorrect csv
 - diff ../outputtravis.csv ../outputtest.csv
-- diff ../outputtraviscorrect ../outputtestcorrect.csv
+- diff ../outputtraviscorrect.csv ../outputtestcorrect.csv
