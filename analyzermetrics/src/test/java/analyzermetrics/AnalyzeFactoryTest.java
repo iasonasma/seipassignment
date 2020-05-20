@@ -55,5 +55,22 @@ public class AnalyzeFactoryTest {
 		assertThat(csvparser,is(CsvParser.class));
 	}
 	
+	//Test case to see if we have a different type other than strcomp and regex
+	@Test(expected = IllegalArgumentException.class)
+	public void testCreateAnalyzerWrongType () {
+		result.createAnalyzer("random");
+	}
+	
+	//Test case to see if we have a different type other than local or web
+	@Test(expected = IllegalArgumentException.class)
+	public void testFileReadWrongType () {
+		result.createReader("random");
+	}
+	
+	//Test case to see if we have a different type other than csv 
+	@Test(expected = IllegalArgumentException.class)
+	public void testCreateParserWrongType() {
+		result.createParser("random");
+	}
 	
 }

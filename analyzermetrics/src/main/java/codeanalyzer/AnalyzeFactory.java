@@ -11,6 +11,8 @@ public class AnalyzeFactory {
 			analyze = new AnalyzeRegex();
 		}else if(type.equals("strcomp")) {
 			analyze = new AnalyzeString();
+		} else {
+			throw new IllegalArgumentException("Unknown type : " + type);
 		}
 		return analyze;	
 	}
@@ -19,13 +21,15 @@ public class AnalyzeFactory {
 	 * returns a object of the type we want
 	 * 
 	 */
-	public static FileReadIO createReader(String filesource) {
+	public static FileReadIO createReader(String typereader) {
 		FileReadIO reader = null;
-		if(filesource.equals("local"))
+		if(typereader.equals("local"))
 		{
 			reader = new FileReadLocal();
-		}else if(filesource.equals("web")) {
+		}else if(typereader.equals("web")) {
 			reader = new FileReadWeb();
+		}else {
+			throw new IllegalArgumentException("Unknown type : " + typereader);
 		}
 		return reader;
 	}
@@ -40,6 +44,8 @@ public class AnalyzeFactory {
 			parser = new CsvParser();
 		} else if (typeoutsourcefile.equals("json")) {
 			parser = new JsonParser();
+		}else {
+			throw new IllegalArgumentException("Unknown type : " + typeoutsourcefile);
 		}
 		return parser;
 
