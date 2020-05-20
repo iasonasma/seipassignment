@@ -1,5 +1,6 @@
 package analyzermetrics;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,12 +11,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import codeanalyzer.CsvParser;
+import codeanalyzer.JsonParser;
 
 
-public class CsvParserTest {
+public class JsonParserTest {
 	
-	CsvParser mex = new CsvParser();
+	JsonParser mex = new JsonParser();
 	
 	static List<String> listofstrings = new ArrayList<String>();
 	private static String OutputFilePath = "src/test/resources/output_metrics";
@@ -26,7 +27,6 @@ public class CsvParserTest {
 		listofstrings.add("loc,noc,nom");
 		listofstrings.add("7,3,3");
 	}
-	
 	@Test
 	public void testWriteCsv() {
 
@@ -34,7 +34,7 @@ public class CsvParserTest {
 		mex.writeToFile(listofstrings, OutputFilePath);
 		
 		// evaluate that the file exists
-		File outputFile = new File(OutputFilePath + ".csv");
+		File outputFile = new File(OutputFilePath + ".json");
 		Assert.assertTrue(outputFile.exists());
 		
 		// delete the generated file

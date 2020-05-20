@@ -16,7 +16,7 @@ import codeanalyzer.FileReadWeb;
 
 
 public class AnalyzeFactoryTest {
-	 AnalyzeFactory result = new AnalyzeFactory();
+	AnalyzeFactory result = new AnalyzeFactory();
 	 
 
 	 // Test case to see if the factory will make a correct regex item
