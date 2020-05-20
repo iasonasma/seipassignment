@@ -7,14 +7,14 @@ two different ways; using regular expressions or string comparison.
 ## Changes on project
 * A new Factory has been made.We have now clearly dependancy on every class.We can now make a new class on each interface without ruining the other class or methods
 	* Why you selected a specific pattern?
-		* With Factory we are now able to have a independancy between classes.The new subclass which is now gonna be made, can choose which instance to make. For example in this project we can choose between the local instance,which has methods of reaing a local file or web instance which downloads and analyze the file.Also there is a possibility now that changes on a instance won't affect other instances.
-	*How it affects your system? 
+		* With Factory we are now able to have a independancy between classes.The new subclass which is now gonna be made, can choose which instance to make. For example in this project we can choose between the local instance,which has methods of reading a local file or web instance which downloads and analyze the file.Also there is a possibility now that changes on a instance won't affect other instances.
+	* How it affects your system? 
 		* Subclasses can choose what type of object to create
 		* Eliminates the bind between classes.
 	* Which classes participate in the pattern, serving what role? 
 		* MetricsAnalyzerDemo: This class includes the main of the project.The role is to recieve the arguments of user and pass them to MetricsAnalyzer 
-		*MetricsAnalyzer: Η συγκεκριμένη κλάση περιλαμβάνει τις δυο μεθόδους οι οποίες είναι υπεύθυνες για τη επεξεργασία και δημιουργία αρχείου που σχετίζονται με τις μετρικές.Συγκεκριμένα η calculateMetrics,έχοντας τις παραμέτρους δημιουργεί μέσω του Factory τις μεθόδους που είναι αναγκαίες σύμφωνα με αυτά που έχει δώσει ο χρήστης,ενώ η writeToList ως βοηθητική καθώς δημιουργεί μια λίστα με τις μετρικές που δημιουργούντε.Η κλάση αυτή βοηθάει στο να έχουμε ενα καθαρό Client το οποίο το μόνο που θα ζητάει είναι να εκτελεστεί στο παρασκήνιο ΄όλο το σύστημα
-		*AnalyzeFactory: To συγκεκριμένο Factory περιέχει 3ς μεθόδους τις οποίες ανάλογα με το input , το οποίο πρόκυται για τον τύπο του object που θέλουμε,θα επιστρέφει-φτιάχνει το κατάλληλο αντικείμενο.
+		* MetricsAnalyzer: Η συγκεκριμένη κλάση περιλαμβάνει τις δυο μεθόδους οι οποίες είναι υπεύθυνες για τη επεξεργασία και δημιουργία αρχείου που σχετίζονται με τις μετρικές.Συγκεκριμένα η calculateMetrics,έχοντας τις παραμέτρους δημιουργεί μέσω του Factory τις μεθόδους που είναι αναγκαίες σύμφωνα με αυτά που έχει δώσει ο χρήστης,ενώ η writeToList ως βοηθητική καθώς δημιουργεί μια λίστα με τις μετρικές που δημιουργούντε.Η κλάση αυτή βοηθάει στο να έχουμε ενα καθαρό Client το οποίο το μόνο που θα ζητάει είναι να εκτελεστεί στο παρασκήνιο ΄όλο το σύστημα
+		* AnalyzeFactory: To συγκεκριμένο Factory περιέχει 3ς μεθόδους τις οποίες ανάλογα με το input , το οποίο πρόκυται για τον τύπο του object που θέλουμε,θα επιστρέφει-φτιάχνει το κατάλληλο αντικείμενο.
 		* JsonParser: This class includes method to write our result to a JSON file
 		* CsvParser: This class includes method to write our result to a CSV file
 		* AnalyzeRegex: This class includes methods to calculate LOC,NOM,NOC.It implements the methods from the interface and overides them.The input is a list of strings which through loop compares it each time with the correct pattern
