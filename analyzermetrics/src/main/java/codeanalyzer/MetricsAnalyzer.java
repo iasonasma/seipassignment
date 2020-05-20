@@ -9,12 +9,14 @@ public class MetricsAnalyzer {
 		int linesCode;
 		int classNumber;
 		int methodsNumber;
+		
 		List<String> metrics = new ArrayList<String>();
 		List<String> codelines = new ArrayList<>();
 		AnalyzeFactory factory = new AnalyzeFactory();
 		FileReadIO reader = factory.createReader(filesource);
 		SourceCodeAnalyze analyzer = factory.createAnalyzer(method);
 		FileParser parser = factory.createParser(typeoutsourcefile);
+		
 		try {
 			codelines = reader.storeFileList(pathfile);
 		}catch(Exception e) { 

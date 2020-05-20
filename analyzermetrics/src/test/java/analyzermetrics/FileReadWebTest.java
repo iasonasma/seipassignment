@@ -20,12 +20,14 @@ public class FileReadWebTest {
 	private static List<String> expectedList;
 	private final static String TEST_CLASS_WEB ="https://drive.google.com/uc?export=download&id=1z51FZXqPyun4oeB7ERFlOgfcoDfLLLhg";
 	private final static String TEST_CLASS_LOCAL = "src/test/resources/TestClass.java";
+	
 	@BeforeClass
 	public static void setUp() throws IOException {
 		expectedList = Files.readAllLines(new File(TEST_CLASS_LOCAL).toPath(), Charset.defaultCharset());
 
 	}
 	
+	//Test case to see if the file we will download is same as a local file which are same
 	@Test
 	public void testReadFileIntoListWeb() throws IOException {
 		List<String> actualList = sfr.storeFileList(TEST_CLASS_WEB);

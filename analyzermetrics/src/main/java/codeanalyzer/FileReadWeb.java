@@ -8,11 +8,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileReadWeb implements FileReadIO {
-	String line = null;
-	BufferedReader reader = null;
 	
+	
+	/*Recieves the URL of the file we want to download 
+	 * analyzes it and returns a list of string the file has
+	 */
 	@Override
 	public List<String> storeFileList(String pathfile) {
+		String line = null;
+		BufferedReader reader = null;
 		List<String> lines = new ArrayList<>();
 		URL url = null;
 		try {

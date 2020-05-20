@@ -7,6 +7,7 @@ public class AnalyzeString implements SourceCodeAnalyze{
 	int nom = 0;
 	int noc = 0;
 	 
+	//Recieves a list of strings and returns the number  line of numbers via strcompare
 	@Override
 	public int countLOC(List<String> codeslines) {
 		int nonCodeLinesCounter = 0;
@@ -18,7 +19,8 @@ public class AnalyzeString implements SourceCodeAnalyze{
 		loc = codeslines.size() - nonCodeLinesCounter;
 		return loc; 
 	}
-
+	
+	//Recieves a list of strings and returns the number  number of methods via strcompare
 	@Override
 	public int countNOM(List<String> codeslines) {
 		for (String line : codeslines) {
@@ -31,6 +33,7 @@ public class AnalyzeString implements SourceCodeAnalyze{
 		return nom; 
 	}
 
+	//Recieves a list of strings and returns the number  number of code via strcompare
 	@Override
 	public int countNOC(List<String> codeslines) {
 		int noc = 0;

@@ -10,6 +10,10 @@ import java.util.List;
 public class FileReadLocal implements FileReadIO {
 	
 
+	/*
+	 * Recieves the path of the file we want to analyze,
+	 * and returns a list of the code
+	 */
 	@Override
 	public List<String> storeFileList(String pathfile) {
 		String line = null; 

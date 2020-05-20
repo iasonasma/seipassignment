@@ -24,7 +24,8 @@ public class CsvParserTest {
 	static List<String> listofstrings = new ArrayList<String>();
 	private static   String TEST_CLASS_LOCAL = "src/test/resources/TestClass.java";
 	private static String OutputFilePath = "src/test/resources/output_metrics";
-			
+
+	//A method which setups the list we want to test our methods
 	@Before
 	public  void setUp() throws IOException {
 		listofstrings.add("loc,noc,nom");

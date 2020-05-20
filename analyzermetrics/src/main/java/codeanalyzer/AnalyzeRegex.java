@@ -9,6 +9,7 @@ public class AnalyzeRegex implements SourceCodeAnalyze{
 	public int nom = 0;
 	public int noc = 0;
 	
+//Recieves a list of strings and returns the number  line of numbers via regex
 @Override
 public int countLOC(List<String> codeslines) {
 	int nonCodeLinesCounter = 0;
@@ -25,6 +26,7 @@ public int countLOC(List<String> codeslines) {
 	return loc; 
 }
 
+//Recieves a list of strings and returns the number number of methods via regex
 	@Override
 	public int countNOM(List<String> codeslines) {
 		for(String sourceCode: codeslines) {
@@ -38,6 +40,7 @@ public int countLOC(List<String> codeslines) {
 		
 	}
 
+//Recieves a list of strings and returns the number of code via regex
 	@Override
 	public int countNOC(List<String> codeslines) {
 		for(String sourceCode : codeslines) {
