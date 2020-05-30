@@ -10,6 +10,9 @@ public class JsonParser implements FileParser{
 	@Override
 	public void writeToFile(List<String> totalmetrics, String outputsource) {
 		// not needed for this assignment
+		if(totalmetrics.size() == 0) {
+			throw new IllegalArgumentException("List is empty");
+		}
 		PrintWriter writer = null;
 		try {
 			writer = new PrintWriter(new File(outputsource + ".json"));

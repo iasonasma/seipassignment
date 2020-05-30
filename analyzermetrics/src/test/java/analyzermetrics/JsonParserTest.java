@@ -28,7 +28,7 @@ public class JsonParserTest {
 		listofstrings.add("7,3,3");
 	}
 	@Test
-	public void testWriteCsv() {
+	public void testWriteJSON() {
 
 		// generate and write the output file
 		mex.writeToFile(listofstrings, OutputFilePath);
@@ -42,6 +42,13 @@ public class JsonParserTest {
 		
 	}
 	
+	@Test(expected=IllegalArgumentException.class)
+	public void testEmptyList() {
+		List<String> emptyList = new ArrayList<String>();
+		mex.writeToFile(emptyList, OutputFilePath);
+		File outputFile = new File(OutputFilePath + ".json");
+		outputFile.delete();
+	}
 
 	
 }

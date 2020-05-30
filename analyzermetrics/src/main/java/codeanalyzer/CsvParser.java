@@ -12,6 +12,9 @@ public class CsvParser implements FileParser {
 	@Override
 	public void writeToFile(List<String> totalmetrics, String outputsource) {
 		PrintWriter writer = null;
+		if(totalmetrics.size() == 0) {
+			throw new IllegalArgumentException("List is empty");
+		}
 		try {
 			writer = new PrintWriter(new File(outputsource + ".csv"));
 			for (String line : totalmetrics) {

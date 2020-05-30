@@ -42,6 +42,13 @@ public class CsvParserTest {
 		
 	}
 	
+	@Test(expected=IllegalArgumentException.class)
+	public void testEmptyList() {
+		List<String> emptyList = new ArrayList<String>();
+		mex.writeToFile(emptyList, OutputFilePath);
+		File outputFile = new File(OutputFilePath + ".csv");
+		outputFile.delete();
+	}
 
 	
 }
