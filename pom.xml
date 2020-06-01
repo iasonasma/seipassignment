@@ -12,6 +12,7 @@
   <modules>
   	<module>gradeshistogram</module>
   	<module>unittesting</module>
+  	<module>analyzermetrics</module>
   </modules>
 
 

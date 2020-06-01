@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.com/iasonasma/seipassignment.svg?token=zKBy4kPTCDsdVk1RAsYy&branch=master)](https://travis-ci.com/iasonasma/seipassignment)
-[![codecov](https://codecov.io/gh/iasonasma/seipassignment/branch/master/graph/badge.svg?token=NXS4EW6VKJ)](https://codecov.io/gh/iasonasma/seipassignment)
+[![Build Status](https://travis-ci.com/iasonasma/seipassignment.svg?token=zKBy4kPTCDsdVk1RAsYy&branch=development)](https://travis-ci.com/iasonasma/seipassignment)
+[![codecov](https://codecov.io/gh/iasonasma/seipassignment/branch/development/graph/badge.svg?token=NXS4EW6VKJ)](https://codecov.io/gh/iasonasma/seipassignment)
 
 ## General
 
@@ -12,6 +12,10 @@ First assignent is about a introduction to the Maven tool.It's a simple demostra
  
 ## Second Assignment - JUnit testing
 Second assignment is about a introduction to JUnit.It's a simple demostration of how to run tests to simple methods , such dividing and multiply. For more information click .[here](https://github.com/iasonasma/seipassignment/tree/development/unittesting)
+
+## Third Assignment - Metrics Calculator
+Third assignment is about a tool which recieves a .java file and returns a csv of some metrics.
+For more information click .[here](https://github.com/iasonasma/seipassignment/tree/development/analyzermetrics)
 
 ## Requirements 
 * Eclipse 2019-12
